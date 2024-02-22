@@ -8,9 +8,13 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 45px;
+  padding: 15px 35px;
   z-index: 100;
   transition: all ease 0.35s ease;
+
+  &.scrolled{
+    background-color: #1d293a;
+  }
 
   & img{
     max-width: 100%;
@@ -85,7 +89,8 @@ export const Nav = styled.nav`
   }
 
   & h2 a {
-    font-family: "Open Sans", sans-serif;   
+    font-family: "Lato", sans-serif;
+    font-weight: 400; 
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
@@ -93,6 +98,8 @@ export const Nav = styled.nav`
     align-items: center;
     transition: 300ms all ease;
     color: #fff;
+    background-color: none;
+    cursor: pointer;
 
     &:hover {
       color: #00CF5D;
@@ -105,10 +112,23 @@ export const Nav = styled.nav`
 
   & h2:last-of-type {
     a {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      color: #fff;
       display: inline-block;
       border: 2px solid #00cf5d;
-      padding: 5px 15px;
+      padding: 8px 15px;
       border-radius: 4px;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      transition: 300ms all ease;
+
+      &:hover {
+      color: #00CF5D;
+    }
     }
   }
+
+  
 `;

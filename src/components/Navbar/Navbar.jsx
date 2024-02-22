@@ -7,18 +7,26 @@ import { Header, HeaderButton, Nav } from './Navbar.style'
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScrollToClose = () => {
-      if (showMenu) {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+      if(showMenu){
         setShowMenu(false);
       }
-    }
-    window.addEventListener('scroll', handleScrollToClose);
+    };
+
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScrollToClose);
-    }
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, [showMenu]);
 
 
@@ -26,12 +34,23 @@ const Navbar = () => {
     setShowMenu((prevState) => !prevState)
   }
 
-  const handleMenuItemClick = () => {
+  const handleMenuItemClick = (e) => {
     setShowMenu(false);
+    e.preventDefault()
+    const hash = e.target.hash
+    const element = document.querySelector(hash);
+    const offsetTop = element.offsetTop
+    if (typeof window !== `undefined`) {
+      window.scrollTo({
+        top: offsetTop,
+        left: 0,
+        behavior: "smooth",
+      })
+    }
   };
 
   return (
-    <Header>
+    <Header className={isScrolled ? 'scrolled' : ''}>
       <Link>
         <img src={Logo}/>
       </Link>
@@ -39,44 +58,25 @@ const Navbar = () => {
         {showMenu ? <BiX className="hamburguer-line" /> : <BiAlignJustify className="hamburguer-line" />}
       </HeaderButton>
 
-      <Nav id='navbar' className={showMenu ? 'show': ''}>
+      <Nav id='navbar' className={showMenu ? 'show' : ''}>
         <h2>
-          <Link
-          activeClassName="active"
-          onClick={handleMenuItemClick}>
-          Home
-          </Link>
+          <a onClick={handleMenuItemClick} href='#home'>Home</a>
         </h2>
         <h2>
-          <Link
-            activeClassName="active"
-            onClick={handleMenuItemClick}>
-            Sobre
-          </Link>
+          <a onClick={handleMenuItemClick} href='#about'>Sobre</a>
         </h2>
         <h2>
-          <Link            
-            activeClassName="active"
-            onClick={handleMenuItemClick}>
-            Skills
-          </Link>
+          <a onClick={handleMenuItemClick} href='#skills'>Skills</a>
         </h2>
         <h2>
-          <Link            
-            activeClassName="active"
-            onClick={handleMenuItemClick}>
-            Projetos
-          </Link>
+          <a onClick={handleMenuItemClick} href="#projects">Projetos</a>
         </h2>
         <h2>
-          <Link            
-            activeClassName="active"
-            onClick={handleMenuItemClick}>
-            Contatos
-          </Link>
+          <a onClick={handleMenuItemClick} href="#contacts">Contatos</a>
         </h2>
-
-        <h2><Link>Resume</Link></h2>
+        <h2>
+          <a href="" target='_blank'>Resume</a>
+        </h2>
       </Nav>
     </Header>
   )
