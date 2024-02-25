@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-
-import { BiAlignJustify, BiX } from "react-icons/bi"
-import Logo from '../../assets/logo.png'
-import { Header, HeaderButton, Nav } from './Navbar.style'
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { BiAlignJustify, BiX } from 'react-icons/bi';
+import Logo from '../../assets/logo.png';
+import { Header, HeaderButton, Nav } from './Navbar.style';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -17,7 +16,7 @@ const Navbar = () => {
       } else {
         setIsScrolled(false);
       }
-      if(showMenu){
+      if (showMenu) {
         setShowMenu(false);
       }
     };
@@ -29,10 +28,9 @@ const Navbar = () => {
     };
   }, [showMenu]);
 
-
   const handleMenuToggle = () => {
-    setShowMenu((prevState) => !prevState)
-  }
+    setShowMenu((prevState) => !prevState);
+  };
 
   const handleMenuItemClick = (e) => {
     setShowMenu(false);
@@ -52,14 +50,14 @@ const Navbar = () => {
   return (
     <Header className={isScrolled ? 'scrolled' : ''}>
       <Link>
-        <img src={Logo}/>
+        <img src={Logo} alt="Logo" />
       </Link>
       <HeaderButton className={`hamburguer ${showMenu ? 'active' : ''}`} onClick={handleMenuToggle}>
         {showMenu ? <BiX className="hamburguer-line" /> : <BiAlignJustify className="hamburguer-line" />}
       </HeaderButton>
 
-      <Nav id='navbar' className={showMenu ? 'show' : ''}>
-        <h2>
+      <Nav id="navbar" className={showMenu ? 'show' : ''}>
+      <h2>
           <a onClick={handleMenuItemClick} href='#home'>Home</a>
         </h2>
         <h2>
@@ -75,11 +73,11 @@ const Navbar = () => {
           <a onClick={handleMenuItemClick} href="#contacts">Contatos</a>
         </h2>
         <h2>
-          <a href="" target='_blank'>Resume</a>
+          <a href="https://drive.google.com/file/d/1eUOin6BFkSClpazqolH1f74n1LlyrXgU/view?usp=sharing" target='_blank' rel="noreferrer">Resume</a>
         </h2>
       </Nav>
     </Header>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

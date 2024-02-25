@@ -26,6 +26,7 @@ const Home = () => {
         <Socials/>
         <Button/>
       </Container>
+
     </Main>
   )
 }

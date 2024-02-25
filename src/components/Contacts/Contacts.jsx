@@ -10,21 +10,21 @@ const Contacts = () => {
           <Content>
             <p>Estou interessado em trabalhar com qualquer empresa que acredite que minhas habilidades serão úteis para eles. Se você está procurando alguém como eu, por favor me avise. Ou você pode simplesmente &apos;dizer oi&apos; para mim.</p>
 
-            <a href="">Entre em Contato</a>
+            <a href="mailto:gabriell.furtado2002@gmail.com">Entre em Contato</a>
           </Content>
           <Contact>
             <Ul>
               <Li>
                 <Social>E-mail</Social>
-                <SocialLink href="" target="blank">gabriell.furtado2002@gmail.com</SocialLink>
+                <SocialLink href="mailto:gabriell.furtado2002@gmail.com" target="_blank">gabriell.furtado2002@gmail.com</SocialLink>
               </Li>
               <Li>
                 <Social>Linkedin</Social>
-                <SocialLink href="" target="blank">linkedin/gabriel-furtado</SocialLink>
+                <SocialLink href="https://www.linkedin.com/in/gabriel-furtado-souza/" target="_blank">linkedin/gabriel-furtado</SocialLink>
               </Li>
               <Li>
                 <Social>Github</Social>
-                <SocialLink href="" target="blank">github.com/gabrielsousaf</SocialLink>
+                <SocialLink href="https://github.com/gabrielsousaf" target="_blank">github.com/gabrielsousaf</SocialLink>
               </Li>
             </Ul>
           </Contact>

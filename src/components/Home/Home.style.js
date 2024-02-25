@@ -7,10 +7,10 @@ export const Main = styled.main`
   display: flex;
   align-items: center;
   color: white;
-  padding: 0px 80px;
+  padding: 0px 2rem;
 
   @media(max-width:768px){
-    padding: 0px 20px;
+    padding: 0px 1rem;
     margin-top: 10px;
   }
 `
@@ -29,7 +29,7 @@ export const Name = styled.h2`
   }
 
   & span{
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 900;
     margin-bottom: 25px;
     color: #fff;

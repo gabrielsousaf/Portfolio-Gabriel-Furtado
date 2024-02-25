@@ -1,6 +1,6 @@
-import {Buttons} from './Button.style'
+import {Buttons} from './ButtonAbout.style'
 
-const Button = () => {
+const ButtonAbout = () => {
   const handleMenuItemClick = (e) => {
     e.preventDefault()
     const hash = e.target.hash
@@ -18,9 +18,9 @@ const Button = () => {
   return (
     <Buttons>
       <a href="https://drive.google.com/file/d/1eUOin6BFkSClpazqolH1f74n1LlyrXgU/view?usp=sharing" target="_blank" rel="noreferrer">Curriculo</a>
-      <a onClick={handleMenuItemClick} href="#about">Sobre</a>
+      <a onClick={handleMenuItemClick} href="#skills">Skills</a>
     </Buttons>
   )
 }
 
-export default Button
+export default ButtonAbout

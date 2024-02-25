@@ -86,6 +86,10 @@ export const Nav = styled.nav`
       margin: 5px 0;
       padding: 5px 0;
     }
+
+    & .active{
+      color: #00CF5D;
+    }
   }
 
   & h2 a {
