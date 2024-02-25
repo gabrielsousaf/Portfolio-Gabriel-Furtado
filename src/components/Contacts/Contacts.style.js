@@ -6,7 +6,6 @@ export const Footer = styled.div`
 
 export const Container = styled.div`
   padding: 6rem 2rem 2rem;
-  max-width: 80rem;
 
   @media(max-width: 768px){
     padding: 6rem 1rem 2rem;
