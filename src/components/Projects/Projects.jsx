@@ -1,4 +1,4 @@
-import MoviesLib from "../../assets/img_projects/Movies_lib.png"
+import MoviesLib from "../../assets/img_projects/MoviesLib.png"
 import ShopEasy from "../../assets/img_projects/ShopEasy.png"
 import CarHub from "../../assets/img_projects/CarHub.png"
 import Todo from "../../assets/img_projects/Todo.png"
