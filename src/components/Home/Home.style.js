@@ -21,7 +21,6 @@ export const Container = styled.div`
 
 export const Name = styled.h2`
   font-family: "Lato";
-  font-size: 22px;
   color: #00cf5d;
 
   @media(max-width:768px){
