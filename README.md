@@ -1,7 +1,8 @@
 <h1 align="center" width:100%>
 
-![Home - Google Chrome 2023-08-28 20-08-01-min](https://github.com/gabrielsousaf/Movies-Lib/assets/121953504/8c1b9793-04db-45c3-83e0-153a7baf0b60)
-![Design_sem_nome__2_-removebg-preview](https://github.com/gabrielsousaf/Movies-Lib/assets/121953504/a90a4353-7d3a-41d8-9602-bd18c60bd0ba)
+![Gabriel Furtado _ Front End Developer - Google Chrome 2024-02-25 21-29-51](https://github.com/gabrielsousaf/Portfolio-Gabriel-Furtado/assets/121953504/2406a079-3388-4955-9dfb-4d0d29567a1b)
+![Design_sem_nome-removebg-preview](https://github.com/gabrielsousaf/Portfolio-Gabriel-Furtado/assets/121953504/1a38df0b-b769-4d24-878c-7ffcaae67c90)
+
 
 
 # 📱 Portfolio.
@@ -9,7 +10,8 @@
   
 
 ## ⚙ Descrição do projeto.
-> * Configuração de rotas usando o React Router Dom.
+> * Efeitode maquina de escrever, usando a biblioteca typed.js.
+> * Apresentação dos projetos e tecnologias usadas.
 
  
 
