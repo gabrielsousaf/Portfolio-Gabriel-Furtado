@@ -58,7 +58,11 @@ export const Content = styled.p`
   font-weight: 400;
   margin-top: 1.25rem;
   font-size: 1.3rem ;
-  max-width:800px;
+  max-width:75%;
+
+  @media(max-width:768px){
+    max-width:100%;
+  }
 
   @media(max-width: 468px){
     font-size: 1.2rem ;
