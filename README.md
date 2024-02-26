@@ -10,7 +10,7 @@
   
 
 ## ⚙ Descrição do projeto.
-> * Efeitode maquina de escrever, usando a biblioteca typed.js.
+> * Efeito de maquina de escrever, usando a biblioteca typed.js.
 > * Apresentação dos projetos e tecnologias usadas.
 
  
