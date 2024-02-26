@@ -25,8 +25,14 @@ export const Title = styled.h2`
 `
 
 export const Content = styled.p`
-    margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin-top: 2rem;
   font-size: 18px;
   line-height: 1.5;
   color: #fff;
+
+  @media(max-width:768px){
+    display:block;
 `
