@@ -8,6 +8,7 @@ export const Main = styled.main`
   align-items: center;
   color: white;
   padding: 0px 2rem;
+  max-width: 80rem;
 
   @media(max-width:768px){
     padding: 0px 1rem;
