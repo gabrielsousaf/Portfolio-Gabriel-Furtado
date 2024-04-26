@@ -17,7 +17,7 @@ const Button = () => {
 
   return (
     <Buttons>
-      <a href="https://drive.google.com/file/d/1vT_i2ArchXdab4uJW2R7yWunjEfaQ9yJ/view?usp=sharing" target="_blank" rel="noreferrer">Curriculo</a>
+      <a href="https://drive.google.com/file/d/1JobNqtQ2zYMtAp7PTsltzerLhpMJMRNT/view?usp=sharing" target="_blank" rel="noreferrer">Curriculo</a>
       <a onClick={handleMenuItemClick} href="#about">Sobre</a>
     </Buttons>
   )
