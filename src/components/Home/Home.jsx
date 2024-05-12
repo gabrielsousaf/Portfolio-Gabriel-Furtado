@@ -7,7 +7,7 @@ import Button from "../Ui/Button/Button";
 const Home = () => {
   useEffect(() => {
     const typed = new Typed('.typing', {
-      strings: ["Programador Front-End", "Desenvolvedor Web", "Programador Front-End"],
+      strings: ["Programador Front-End", "Desenvolvedor Web", "Programador Full Stack"],
       typeSpeed: 70,
       backSpeed: 70,
       loop: true
@@ -21,7 +21,7 @@ const Home = () => {
     <Main id="home">
       <Container>
         <Name>Olá, meu nome é  <br/> <span>Gabriel Furtado</span></Name>
-        <Title>Sou <span className="typing">Desenvolvedor Front-End</span></Title>
+        <Title>Sou <span className="typing">Desenvolvedor Full Stack</span></Title>
         <Content>Estudande de programação, com foco em desenvolvimento front-end. Possuo conhecimento em  <span>NextJs, TypeScript, React e JavaScript</span>, e estou determinado a aprender mais.</Content>
         <Socials/>
         <Button/>
