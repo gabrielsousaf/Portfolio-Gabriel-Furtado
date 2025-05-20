@@ -7,7 +7,7 @@ import Button from "../Ui/Button/Button";
 const Home = () => {
   useEffect(() => {
     const typed = new Typed('.typing', {
-      strings: ["Programador Front-End", "Desenvolvedor Web", "Programador Full Stack"],
+      strings: ["Programador Full Stack", "Desenvolvedor Web", "Programador Front End"],
       typeSpeed: 70,
       backSpeed: 70,
       loop: true
@@ -22,7 +22,7 @@ const Home = () => {
       <Container>
         <Name>Olá, meu nome é  <br/> <span>Gabriel Furtado</span></Name>
         <Title>Sou <span className="typing">Desenvolvedor Full Stack</span></Title>
-        <Content>Estudande de programação, com foco em desenvolvimento full-stack. Possuo conhecimento em  <span>NextJs, TypeScript, React e JavaScript</span>, e estou determinado a aprender mais.</Content>
+        <Content>Desenvolvedor Full-Stack com experiência em <span> Next.js, TypeScript, React e JavaScript</span> Estou sempre em busca de novos desafios e oportunidades para expandir meus conhecimentos e habilidades na área de tecnologia.</Content>
         <Socials/>
         <Button/>
       </Container>
