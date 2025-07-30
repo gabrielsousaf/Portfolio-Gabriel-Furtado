@@ -70,7 +70,6 @@ export const Nav = styled.nav`
     right: 0;
     transition: all 0.4s ease;
     border-radius: 4px;
-    margin: 0 25px;
   }
 
   &.show {

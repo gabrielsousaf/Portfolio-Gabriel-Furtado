@@ -18,6 +18,7 @@ export const Title = styled.h2`
   align-items: center;
   justify-content:center;
   font-size: 3rem;
+  text-align: center;
 
   @media(max-width: 468px) {
     font-size: 2.5rem;
@@ -35,4 +36,5 @@ export const Content = styled.p`
 
   @media(max-width:768px){
     display:block;
+  }
 `
