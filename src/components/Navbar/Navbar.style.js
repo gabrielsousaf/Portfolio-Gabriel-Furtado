@@ -12,6 +12,7 @@ export const Header = styled.header`
   z-index: 100;
   transition: all ease 0.35s ease;
 
+
   &.scrolled{
     background-color: #1d293a;
   }

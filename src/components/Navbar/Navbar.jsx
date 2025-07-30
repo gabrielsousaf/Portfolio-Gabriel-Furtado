@@ -7,6 +7,7 @@ import { Header, HeaderButton, Nav } from './Navbar.style';
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('#home');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +29,31 @@ const Navbar = () => {
     };
   }, [showMenu]);
 
+  useEffect(() => {
+  const sections = document.querySelectorAll('div[id], section[id], main[id]');
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(`#${entry.target.id}`);
+        }
+      });
+    },
+    {
+      threshold: 0.7,
+    }
+  );
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+
+  return () => {
+    sections.forEach((section) => observer.unobserve(section));
+  };
+}, []);
+
+
   const handleMenuToggle = () => {
     setShowMenu((prevState) => !prevState);
   };
@@ -36,6 +62,7 @@ const Navbar = () => {
     setShowMenu(false);
     e.preventDefault()
     const hash = e.target.hash
+    setShowMenu(false);
     const element = document.querySelector(hash);
     const offsetTop = element.offsetTop
     if (typeof window !== `undefined`) {
@@ -58,19 +85,19 @@ const Navbar = () => {
 
       <Nav id="navbar" className={showMenu ? 'show' : ''}>
       <h2>
-          <a onClick={handleMenuItemClick} href='#home'>Home</a>
+          <a onClick={handleMenuItemClick} href='#home' className={activeSection === '#home' ? 'active' : ''} >Home</a>
         </h2>
         <h2>
-          <a onClick={handleMenuItemClick} href='#about'>Sobre</a>
+          <a onClick={handleMenuItemClick} href='#about' className={activeSection === '#about' ? 'active' : ''}>Sobre</a>
         </h2>
         <h2>
-          <a onClick={handleMenuItemClick} href='#skills'>Skills</a>
+          <a onClick={handleMenuItemClick} href='#skills' className={activeSection === '#skills' ? 'active' : ''}>Skills</a>
         </h2>
         <h2>
-          <a onClick={handleMenuItemClick} href="#projects">Projetos</a>
+          <a onClick={handleMenuItemClick} href="#projects" className={activeSection === '#projects' ? 'active' : ''}>Projetos</a>
         </h2>
         <h2>
-          <a onClick={handleMenuItemClick} href="#contacts">Contatos</a>
+          <a onClick={handleMenuItemClick} href="#contacts" className={activeSection === '#contacts' ? 'active' : ''}>Contatos</a>
         </h2>
         <h2>
           <a href="https://drive.google.com/file/d/1JobNqtQ2zYMtAp7PTsltzerLhpMJMRNT/view?usp=sharing" target='_blank' rel="noreferrer">Resume</a>
