@@ -19,7 +19,7 @@ const NavMenu = ({ showMenu, activeSection, handleMenuItemClick }) => (
       <a onClick={handleMenuItemClick} href="#contacts" className={activeSection === '#contacts' ? 'active' : ''}>Contatos</a>
     </h2>
     <h2>
-      <a href="https://drive.google.com/file/d/1JobNqtQ2zYMtAp7PTsltzerLhpMJMRNT/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
+      <a href="https://drive.google.com/file/d/1iulKy2t-IBpeYlThASFmRlmJxdvxDbCj/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
     </h2>
   </Nav>
 );
