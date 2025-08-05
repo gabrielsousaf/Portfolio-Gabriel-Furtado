@@ -1,61 +1,22 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BiAlignJustify, BiX } from 'react-icons/bi';
 import Logo from '../../assets/logo.png';
 import { Header, HeaderButton, Nav } from './Navbar.style';
 
+import useActiveSection from '../../hooks/UseActiveSection';
+import useScrollStatus from '../../hooks/UseScrollStatus';
+
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState('#home');
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const offset = window.scrollY;
-      if (offset > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-      if (showMenu) {
-        setShowMenu(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [showMenu]);
-
-  useEffect(() => {
-  const sections = document.querySelectorAll('div[id], section[id], main[id]');
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(`#${entry.target.id}`);
-        }
-      });
-    },
-    {
-      threshold: 0.7,
-    }
-  );
-
-  sections.forEach((section) => {
-    observer.observe(section);
+  const isScrolled = useScrollStatus(() => {
+    if (showMenu) setShowMenu(false);
   });
 
-  return () => {
-    sections.forEach((section) => observer.unobserve(section));
-  };
-}, []);
-
+  const activeSection = useActiveSection();
 
   const handleMenuToggle = () => {
-    setShowMenu((prevState) => !prevState);
+    setShowMenu((prev) => !prev);
   };
 
   const handleMenuItemClick = (e) => {

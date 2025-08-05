@@ -14,7 +14,7 @@ const Home = () => {
     <Main id="home">
       <Container>
         <Name>Olá, meu nome é  <br/> <span>Gabriel Furtado</span></Name>
-        <Title>Sou <span className="typing">Desenvolvedor Full Stack</span></Title>
+        <Title>Sou <span className="typing">Programador Full Stack</span></Title>
         <Content>Desenvolvedor Full-Stack com experiência em <span> Next.js, TypeScript, React e JavaScript.</span> Estou sempre em busca de novos desafios e oportunidades para expandir meus conhecimentos e habilidades na área de tecnologia.</Content>
         <Socials/>
         <Button/>

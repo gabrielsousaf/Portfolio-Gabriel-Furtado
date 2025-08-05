@@ -1,4 +1,3 @@
-// src/hooks/useTypedText.js
 import { useEffect } from "react";
 import Typed from "typed.js";
 
