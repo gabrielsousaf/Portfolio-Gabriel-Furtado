@@ -42,8 +42,8 @@ export const projects = [
     name: "Login Page",
     img: Login,
     description: "Formulário de Login e Cadastramento de usuários, feito em React e Firebase.",
-    github: "https://github.com/gabrielsousaf/Login-Form-React",
-    demo: "https://login-form-react-gabrielsousaf.vercel.app/",
+    github: "https://github.com/gabrielsousaf/Login-Page",
+    demo: "https://login-page-six-lyart.vercel.app/",
     tools: ["react", "firebase"]
   },
   {
