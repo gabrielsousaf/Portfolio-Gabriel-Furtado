@@ -1,9 +1,9 @@
 import MoviesLib from "../../assets/img_projects/MoviesLib.png";
 import ShopEasy from "../../assets/img_projects/ShopEasy.png";
 import Travel from "../../assets/img_projects/Travel.png";
-import Todo from "../../assets/img_projects/Todo.png";
 import Login from "../../assets/img_projects/Login.png";
 import GymWebSite from "../../assets/img_projects/GymWebsite.png";
+import MiniBlog from "../../assets/img_projects/MiniBlog.png";
 
 export const projects = [
   {
@@ -31,11 +31,11 @@ export const projects = [
     tools: ["next", "typescript", "tailwind"]
   },
   {
-    name: "Todo List",
-    img: Todo,
-    description: "Todo List feito em TypeScript, onde é possível marcar como concluída, excluir e modificar.",
-    github: "https://github.com/gabrielsousaf/Todo",
-    demo: "https://todo-gabrielsousaf.vercel.app/",
+    name: "Mini Blog",
+    img: MiniBlog,
+    description: "Mini Blog feito em React, onde posso fazer login, cadastar usuario e enviar fotos.",
+    github: "https://github.com/gabrielsousaf/MiniBlog-React",
+    demo: "https://mini-blog-react-eta.vercel.app/",
     tools: ["react", "firebase"]
   },
   {
