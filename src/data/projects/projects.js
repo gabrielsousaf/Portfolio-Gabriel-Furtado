@@ -1,6 +1,6 @@
 import MoviesLib from "../../assets/img_projects/MoviesLib.png";
 import ShopEasy from "../../assets/img_projects/ShopEasy.png";
-import CarHub from "../../assets/img_projects/CarHub.png";
+import Travel from "../../assets/img_projects/Travel.png";
 import Todo from "../../assets/img_projects/Todo.png";
 import Login from "../../assets/img_projects/Login.png";
 import GymWebSite from "../../assets/img_projects/GymWebsite.png";
@@ -23,12 +23,12 @@ export const projects = [
     tools: ["react", "api", "firebase"]
   },
   {
-    name: "CarHub",
-    img: CarHub,
-    description: "Website de aluguel de carros, que podem escolher vários modelos e filtrar as opções.",
-    github: "https://github.com/gabrielsousaf/Car-Hub",
-    demo: "https://car-hub-gabrielsousaf.vercel.app/",
-    tools: ["next", "typescript", "api"]
+    name: "Travel",
+    img: Travel,
+    description: "Site de viagens com várias funcionalidades, feito em Next.",
+    github: "https://github.com/gabrielsousaf/Travel",
+    demo: "https://travel-xi-ruddy.vercel.app/",
+    tools: ["next", "typescript", "tailwind"]
   },
   {
     name: "Todo List",
