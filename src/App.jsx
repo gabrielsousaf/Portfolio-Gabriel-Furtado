@@ -5,6 +5,7 @@ import Contacts from "./components/Contacts/Contacts"
 import Footer from "./components/Footer/Footer"
 import Skills from "./components/Skills/Skills"
 import Projects from "./components/Projects/Projects"
+import Experience from "./components/Experience/Experience"
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Navbar/>
       <Home/>
       <About/>
+      <Experience/>
       <Skills/>
       <Projects/>
       <Contacts/>

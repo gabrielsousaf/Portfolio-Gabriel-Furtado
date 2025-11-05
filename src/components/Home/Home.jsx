@@ -15,7 +15,11 @@ const Home = () => {
       <Container>
         <Name>Olá, meu nome é  <br/> <span>Gabriel Furtado</span></Name>
         <Title>Sou <span className="typing">Programador Full Stack</span></Title>
-        <Content>Desenvolvedor Full-Stack com experiência em <span> Next.js, TypeScript, React e JavaScript.</span> Estou sempre em busca de novos desafios e oportunidades para expandir meus conhecimentos e habilidades na área de tecnologia.</Content>
+        <Content>
+          Desenvolvedor Full-Stack na <span>Faculdade Uninta</span> (desde out/2025), atuando com
+          <span> Next.js, TypeScript, React e JavaScript</span>. Focado em entregar soluções performáticas e escaláveis,
+          sempre evoluindo e assumindo novos desafios.
+        </Content>
         <Socials/>
         <Button/>
       </Container>

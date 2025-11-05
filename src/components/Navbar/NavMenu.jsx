@@ -10,6 +10,9 @@ const NavMenu = ({ showMenu, activeSection, handleMenuItemClick }) => (
       <a onClick={handleMenuItemClick} href="#about" className={activeSection === '#about' ? 'active' : ''}>Sobre</a>
     </h2>
     <h2>
+      <a onClick={handleMenuItemClick} href="#experience" className={activeSection === '#experience' ? 'active' : ''}>Experiência</a>
+    </h2>
+    <h2>
       <a onClick={handleMenuItemClick} href="#skills" className={activeSection === '#skills' ? 'active' : ''}>Skills</a>
     </h2>
     <h2>
